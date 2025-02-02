@@ -21,4 +21,4 @@ COPY . .
 EXPOSE 9000
 
 #Defining command to run the app inside the new environment
-CMD ["node", "./src/server.js"]
+CMD ["node", "./src/server.ts"]
