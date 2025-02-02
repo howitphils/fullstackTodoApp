@@ -17,8 +17,5 @@ RUN npm install
 #Copying the rest of the files (. - root folder of the app and root folder for docker environment(/app))
 COPY . .
 
-#Exposing a port for environment to listen to
-EXPOSE 9000
-
 #Defining command to run the app inside the new environment
-CMD ["node", "./src/server.ts"]
+CMD ["node", "--experimental-strip-types", "./src/server.ts"]
